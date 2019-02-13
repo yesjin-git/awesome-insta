@@ -1956,12 +1956,12 @@ input, select, textarea {
 			opacity: 0.25;
 		}
 
-		input[type="submit"].primary,
+		input[type="submit"].ry,
 		input[type="reset"].primary,
 		input[type="button"].primary,
 		button.primary,
 		.button.primary {
-			background-color: #49fcd4;
+			background-color: hsl(61, 100%, 54%);
 			box-shadow: none;
 			color: #000000 !important;
 		}
