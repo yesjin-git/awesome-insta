@@ -48,8 +48,7 @@
     <section class="intro">
       <header>
         <h1>Python<br>으로<br> 만드는 <br>나만의 <br>Instagram Bot</h1>
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdfQeIFF5V91rL4JgHtDfYL9qR-aITogc8Hm3b6X9vbu61dZw/viewform?usp=sf_link"
-          target="_blank" class="button primary large" style>신청하기</a>
+        <a href="" onclick="openSurvey()" target="_blank" class="button primary large" style>신청하기</a>
         <p>
           <br>
           파이썬 기초부터 배워서 직접 좋아요, 댓글 눌러주는 Instagram 봇 만들기
@@ -83,7 +82,8 @@
         </p>
         <ul class="actions">
           <li>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdfQeIFF5V91rL4JgHtDfYL9qR-aITogc8Hm3b6X9vbu61dZw/viewform?usp=sf_link"
+            <a href=""
+            onclick="openSurvey()"
               target="_blank" class="button primary large">신청하기</a>
           </li>
           <li>
@@ -574,10 +574,17 @@ print 'Sorted in ' + i + ' iterations.';</code></pre>
   <script src="assets/js/util.js"></script>
   <script src="assets/js/main.js"></script>
   <script>
+    const openSurvey = () => {
+      window.open(survey)
+      fbq('track', 'ViewContent');
+    }
     const openKakao = () => {
       window.open(url)
+      fbq('track', 'ViewContent');
     }
     const url = "https://open.kakao.com/o/gisscKeb"
+    const survey =
+      "https://docs.google.com/forms/d/e/1FAIpQLSdfQeIFF5V91rL4JgHtDfYL9qR-aITogc8Hm3b6X9vbu61dZw/viewform?usp=sf_link"
   </script>
 </body>
 
